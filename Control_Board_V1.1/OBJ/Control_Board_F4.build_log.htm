@@ -1,0 +1,133 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: liu na, xlkj, LIC=0VR30-BFF7W-SDFK4-F3L6F-EUBXN-X74AC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.22
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.21.0.0
+ 
+<h2>Project:</h2>
+D:\转台相关资料\转台相关资料\控制板V1.1\DRD-BDZT.C2.V1控制板V1.1软件代码\Control_Board_V1.1\USER\Control_Board_F4.uvproj
+Project File Date:  01/07/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling main.c...
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+main.c(63): warning:  #223-D: function "uart5_init" declared implicitly
+  	uart5_init(9600);	 //串口初始化为9600
+main.c(74): warning:  #223-D: function "EXTIX_Init" declared implicitly
+  	EXTIX_Init();		 				//外部中断初始化
+main.c(80): warning:  #223-D: function "Motor_Init" declared implicitly
+  	Motor_Init();
+main.c: 4 warnings, 0 errors
+assembling startup_stm32f40_41xxx.s...
+compiling misc.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_usart.c...
+compiling delay.c...
+compiling stm32f4xx_tim.c...
+compiling usart.c...
+..\SYSTEM\src\usart.c(157): warning:  #223-D: function "delay_ms" declared implicitly
+  	delay_ms(10);
+..\SYSTEM\src\usart.c: 1 warning, 0 errors
+compiling sys.c...
+compiling usart5.c...
+compiling key.c...
+compiling coor.c...
+..\STATE\coor.h(37): warning:  #1-D: last line of file ends without a newline
+  void Coor_Spin(u8 Num);
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+..\SYSTEM\src\coor.c(40): warning:  #223-D: function "delay_ms" declared implicitly
+  	delay_ms(100);
+..\SYSTEM\src\coor.c: 3 warnings, 0 errors
+compiling exti.c...
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+..\HARDWARE\src\exti.c: 1 warning, 0 errors
+compiling led.c...
+..\HARDWARE\src\led.c(30): warning:  #223-D: function "delay_ms" declared implicitly
+  	delay_ms(ms);
+..\HARDWARE\src\led.c: 1 warning, 0 errors
+compiling timer.c...
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+..\HARDWARE\src\timer.c: 1 warning, 0 errors
+compiling can.c...
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+..\HARDWARE\src\can.c: 1 warning, 0 errors
+compiling can2.c...
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+..\HARDWARE\src\can2.c: 1 warning, 0 errors
+compiling devices.c...
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+..\HARDWARE\src\devices.c(42): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\src\devices.c: 2 warnings, 0 errors
+compiling switch.c...
+..\HARDWARE\src\switch.c(34): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\src\switch.c: 1 warning, 0 errors
+compiling GUI.c...
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+..\GUI\GUI.c(31): warning:  #223-D: function "Clear_RX5_BUF" declared implicitly
+  	Clear_RX5_BUF();
+..\GUI\GUI.c: 2 warnings, 0 errors
+compiling motor.c...
+..\HARDWARE\src\motor.c(75): warning:  #223-D: function "delay_ms" declared implicitly
+  			delay_ms(5);
+..\HARDWARE\src\motor.c(82): warning:  #223-D: function "delay_ms" declared implicitly
+  			delay_ms(5);
+..\HARDWARE\src\motor.c(100): warning:  #223-D: function "delay_ms" declared implicitly
+  			delay_ms(5);
+..\HARDWARE\src\motor.c(141): warning:  #223-D: function "delay_ms" declared implicitly
+  		delay_ms(5);
+..\HARDWARE\src\motor.c(165): warning:  #223-D: function "delay_ms" declared implicitly
+  	delay_ms(5);
+..\HARDWARE\src\motor.c(189): warning:  #223-D: function "delay_ms" declared implicitly
+  		delay_ms(5);
+..\HARDWARE\src\motor.c(199): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\src\motor.c: 7 warnings, 0 errors
+compiling state.c...
+..\GUI\GUI.h(48): warning:  #1295-D: Deprecated declaration Clear_LCD - give arg types
+  void Clear_LCD();
+..\STATE\coor.h(37): warning:  #1-D: last line of file ends without a newline
+  void Coor_Spin(u8 Num);
+..\STATE\state.c(709): warning:  #1-D: last line of file ends without a newline
+  }
+..\STATE\state.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=23092 RO-data=424 RW-data=328 ZI-data=2032  
+"..\OBJ\Control_Board_F4.axf" - 0 Error(s), 28 Warning(s).
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>
